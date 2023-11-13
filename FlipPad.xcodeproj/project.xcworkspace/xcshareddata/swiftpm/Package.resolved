@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "cpng",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/s1ddok/Cpng",
+      "state" : {
+        "branch" : "master",
+        "revision" : "48cdf7dbf6db6776b2a118fc6ebd22faaea9f746"
+      }
+    },
+    {
+      "identity" : "flipbook-6-windows",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gracetrannn/FlipBook-6-Windows.git",
+      "state" : {
+        "branch" : "libdgc-v2",
+        "revision" : "4d59d972ec46b8656f1cb67e45c617a8fda23acc"
+      }
+    },
+    {
+      "identity" : "plcrashreporter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/microsoft/plcrashreporter",
+      "state" : {
+        "revision" : "b1a342da19ed9b3af61ea2efa7656c2af30aeb7c",
+        "version" : "1.11.0"
+      }
+    },
+    {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift.git",
+      "state" : {
+        "revision" : "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
+        "version" : "5.1.0"
+      }
+    },
+    {
+      "identity" : "swiftkeychainwrapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jrendel/SwiftKeychainWrapper.git",
+      "state" : {
+        "revision" : "185a3165346a03767101c4f62e9a545a0fe0530f",
+        "version" : "4.0.1"
+      }
+    },
+    {
+      "identity" : "swiftystorekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bizz84/SwiftyStoreKit.git",
+      "state" : {
+        "revision" : "9ce911639680113dac9b554d6243e406a9758ebe",
+        "version" : "0.16.4"
+      }
+    }
+  ],
+  "version" : 2
+}
