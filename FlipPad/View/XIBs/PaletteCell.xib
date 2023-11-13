@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2" customClass="FBPaletteCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                        <rect key="frame" x="6.5" y="73" width="77" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9"/>
+                            <constraint firstAttribute="width" constant="77" id="143"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10" customClass="FBColorPaletteView">
+                        <rect key="frame" x="14" y="9" width="62" height="62"/>
+                        <color key="backgroundColor" red="0.97855842113494873" green="0.97855842113494873" blue="0.97855842113494873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="10" secondAttribute="bottom" constant="29" id="106"/>
+                <constraint firstItem="10" firstAttribute="top" secondItem="2" secondAttribute="top" constant="9" id="108"/>
+                <constraint firstAttribute="bottom" secondItem="3" secondAttribute="bottom" constant="6" id="116"/>
+                <constraint firstItem="10" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="14" id="142"/>
+                <constraint firstItem="3" firstAttribute="centerX" secondItem="10" secondAttribute="centerX" id="144"/>
+                <constraint firstItem="3" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="145"/>
+            </constraints>
+            <size key="customSize" width="99" height="96"/>
+            <connections>
+                <outlet property="colorsView" destination="10" id="20"/>
+                <outlet property="nameField" destination="3" id="21"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="96"/>
+        </collectionViewCell>
+    </objects>
+</document>

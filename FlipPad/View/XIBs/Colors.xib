@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FBColorsController">
+            <connections>
+                <outlet property="colorBox" destination="12" id="14"/>
+                <outlet property="opacitySlider" destination="4" id="16"/>
+                <outlet property="paletteView" destination="18" id="43"/>
+                <outlet property="view" destination="3" id="7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="106" y="375" width="155" height="31"/>
+                    <connections>
+                        <action selector="opacityChanged:" destination="-1" eventType="valueChanged" id="10"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Opacity:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                    <rect key="frame" x="22" y="380" width="63" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="Y6l-Lt-hEX"/>
+                        <constraint firstAttribute="height" constant="20" id="hsW-Mn-ade"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                    <rect key="frame" x="279" y="380" width="20" height="20"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="hVW-FG-f5X"/>
+                        <constraint firstAttribute="height" constant="20" id="sHQ-HQ-hb1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18" customClass="FBColorPaletteView">
+                    <rect key="frame" x="20" y="44" width="280" height="316"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fLg-cb-0Gl"/>
+            <color key="backgroundColor" red="0.9358865489" green="0.9358865489" blue="0.9358865489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="5" secondAttribute="trailing" constant="23" id="12M-sy-zQu"/>
+                <constraint firstItem="4" firstAttribute="centerY" secondItem="5" secondAttribute="centerY" id="1Hu-CJ-8cC"/>
+                <constraint firstItem="12" firstAttribute="leading" secondItem="4" secondAttribute="trailing" constant="20" id="29F-G0-Z05"/>
+                <constraint firstItem="fLg-cb-0Gl" firstAttribute="trailing" secondItem="12" secondAttribute="trailing" constant="21" id="5PY-of-hMF"/>
+                <constraint firstItem="18" firstAttribute="top" secondItem="fLg-cb-0Gl" secondAttribute="top" constant="20" id="DoW-Sn-qN3"/>
+                <constraint firstItem="12" firstAttribute="centerY" secondItem="4" secondAttribute="centerY" id="EFA-fE-YMl"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="fLg-cb-0Gl" secondAttribute="leading" constant="20" id="EI1-hD-l8Z"/>
+                <constraint firstItem="fLg-cb-0Gl" firstAttribute="trailing" secondItem="18" secondAttribute="trailing" constant="20" id="ElR-Io-SHn"/>
+                <constraint firstItem="fLg-cb-0Gl" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" constant="20" id="GgQ-2c-u93"/>
+                <constraint firstItem="5" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="20" id="LGL-Pm-AvG"/>
+                <constraint firstItem="5" firstAttribute="leading" secondItem="fLg-cb-0Gl" secondAttribute="leading" constant="22" id="NIQ-Vl-yQn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="111.71875" y="223.82812499999997"/>
+        </view>
+    </objects>
+</document>

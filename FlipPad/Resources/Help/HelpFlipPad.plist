@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>The Xsheet is the animators timeline. It is vertical because that’s what animators are used to. So every row is a frame and every column is a level. The background (BG) is on the right and the foreground levels stack up to the left. Images are automatically held so they will continue to display until they are replaced by another image or you stop the hold. To Stop an image from Holding tap on the empty cel that follows the image and select Stop Hold</string>
+	<string>Line thickness can be controlled by either the Apple Pencil or by your drawing speed. The Min and Max settings let you control the extremes for both. Normally faster is wider, but if you set the Min to be greater than the Max then faster is thinner. Make both Min and Max equal for a constant line width. More line styles will be added in the future.</string>
+	<string>Animated drawings are usually made up of lines and paint. FlipBook stores the lines and the paint in separate files and edits them with separate tools. The pencil draws the lines and the bucket fills them in. (Brushes will added in a future update.) The Eraser works WITH the pencil or the bucket. Select the eraser and the pencil to erase lines. Select the eraser and the bucket to erase paint. Tap the eraser to turn it off.</string>
+	<string>The Undo and Redo icons near the edit tools only undo and redo editing. They do not affect changes to the xsheet.</string>
+	<string>FlipPad’s Lightbox does more than just show the previous or a next drawing. It can show several of your most recently opened drawings from the current level. Tap and Hold the Lightbox button set the number. The Lightbox will also automatically show any drawings from the other levels that will appear in the same frame as the drawing you’re editing.</string>
+	<string>While Editing, with the Lightbox ON, FlipBook displays the reference images as ghost images. When you tap Pause FlipPad switches from Edit to Pause and displays all of the images in the current frame. This makes ghosted images become solid and the Play/Pause button switches to Play. The next time you tap it FlipPad starts to Play. So it is “normal” for you to have to tap the Pause/Play button twice to start playing.</string>
+	<string>The Flip icon currently Flips between the previous image and the image you’re editing. (In a future version we will give you more control over what Flip can do.)</string>
+	<string>Upgrade To Use The Apple Pencil and get HD Resolution, Millions of Colors &amp; Palletes and Up To 10 Levels free.</string>
+	<string>Get Full HD Resolution  Get Millions Of Colors, Apple Pencil Support and Up To 10 Levels Free!</string>
+	<string>Add Custom Palettes And Millions Of Colors for only and Get Full HD Resolution, Apple Pencil Support and Up To 10 Layers Free!</string>
+	<string>Get Full HD Resolution, Millions Of Colors and Apple Pencil Support Free!</string>
+</array>
+</plist>

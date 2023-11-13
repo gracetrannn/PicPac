@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FBDocumentsController">
+            <connections>
+                <outlet property="collectionView" destination="14" id="30"/>
+                <outlet property="collectionViewTopConstraint" destination="tV5-c2-Ozm" id="WGO-Df-3eJ"/>
+                <outlet property="createSceneButton" destination="5" id="x90-Dh-zwH"/>
+                <outlet property="currentToolbar" destination="4" id="5p7-w1-fHE"/>
+                <outlet property="demoToolbar" destination="49" id="57"/>
+                <outlet property="editingToolbar" destination="36" id="41"/>
+                <outlet property="mainToolbar" destination="MOy-vN-eys" id="5rj-As-BA6"/>
+                <outlet property="versionLabel" destination="7wV-fu-vNC" id="cm7-uX-MWi"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="V5U-Cu-nrc"/>
+                    </constraints>
+                    <items/>
+                </toolbar>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="14">
+                    <rect key="frame" x="0.0" y="64" width="768" height="927"/>
+                    <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="15">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="28"/>
+                        <outlet property="delegate" destination="-1" id="29"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0.0 (1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wV-fu-vNC">
+                    <rect key="frame" x="709.5" y="999" width="50.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="D9k-2M-AAh"/>
+            <color key="backgroundColor" red="0.4353089631" green="0.44310289619999998" blue="0.47440725560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="D9k-2M-AAh" firstAttribute="bottom" secondItem="7wV-fu-vNC" secondAttribute="bottom" constant="8" id="2YM-I2-NsK"/>
+                <constraint firstItem="7wV-fu-vNC" firstAttribute="top" secondItem="14" secondAttribute="bottom" constant="8" id="4Re-I6-Fk4"/>
+                <constraint firstItem="D9k-2M-AAh" firstAttribute="trailing" secondItem="7wV-fu-vNC" secondAttribute="trailing" constant="8" id="8jQ-zd-GLb"/>
+                <constraint firstItem="7wV-fu-vNC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D9k-2M-AAh" secondAttribute="leading" constant="8" id="ANo-ie-z2u"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" id="E4b-f9-1kr"/>
+                <constraint firstItem="D9k-2M-AAh" firstAttribute="trailing" secondItem="14" secondAttribute="trailing" id="Jf4-T1-dW5"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="RlU-Bx-d95"/>
+                <constraint firstItem="14" firstAttribute="leading" secondItem="D9k-2M-AAh" secondAttribute="leading" id="Uj0-VR-ach"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="D9k-2M-AAh" secondAttribute="top" id="o3s-4i-bKD"/>
+                <constraint firstItem="14" firstAttribute="top" secondItem="4" secondAttribute="bottom" id="tV5-c2-Ozm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-95.3125" y="298.828125"/>
+        </view>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="36">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <viewLayoutGuide key="safeArea" id="3yF-9q-BCV"/>
+            <items>
+                <barButtonItem enabled="NO" title="Rename" id="37">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="renameDocument:" destination="-1" id="43"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="cUT-c2-XNz"/>
+                <barButtonItem enabled="NO" title="Duplicate" id="k7B-a3-DZu">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="duplicateDocument:" destination="-1" id="8jR-im-ASd"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="KmT-u0-sao"/>
+                <barButtonItem enabled="NO" title="Delete" id="38">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="deleteDocument:" destination="-1" id="44"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="CUz-DU-0mn"/>
+                <barButtonItem enabled="NO" title="Export" id="Eyb-ng-5fO">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="shareDocument:" destination="-1" id="4fL-fk-b2o"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="40"/>
+                <barButtonItem tag="1" systemItem="done" id="39">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="finishEditing:" destination="-1" id="46"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+            <point key="canvasLocation" x="-334.375" y="-199.21875"/>
+        </toolbar>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="49">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <viewLayoutGuide key="safeArea" id="qa6-89-y3K"/>
+            <items>
+                <barButtonItem tag="3" title="New Scene" id="50">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="showSettings:" destination="-1" id="G1m-Zg-6iW"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="YA4-Dc-bfB"/>
+                <barButtonItem tag="3" title="Import Scene" id="596-eH-5iM" userLabel="Import">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="importDocument:" destination="-1" id="aKx-jM-qzK"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="PMS-o8-oPS"/>
+                <barButtonItem tag="3" title="Upgrade" id="WnB-fD-2vU">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="purchasesAction:" destination="-1" id="hgQ-Gw-Wqm"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="52"/>
+                <barButtonItem title="Select" id="53">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="startEditing:" destination="-1" id="55"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+            <point key="canvasLocation" x="-334.375" y="-135.3515625"/>
+        </toolbar>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="MOy-vN-eys">
+            <rect key="frame" x="0.0" y="0.0" width="769" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <viewLayoutGuide key="safeArea" id="0lj-Ek-13F"/>
+            <items>
+                <barButtonItem tag="3" title="New Scene" id="5">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="showSettings:" destination="-1" id="Wgc-Wd-jzi"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="gVw-ak-hdA"/>
+                <barButtonItem tag="3" title="Import Scene" id="Jpc-W2-ZK3" userLabel="Import">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="importDocument:" destination="-1" id="7za-dC-8h9"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="09M-xX-1YL"/>
+                <barButtonItem tag="3" title="Upgrade" id="gJC-fe-sbn">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="purchasesAction:" destination="-1" id="Xmd-VD-ecE"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="32"/>
+                <barButtonItem title="Select" id="33">
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="startEditing:" destination="-1" id="45"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+            <point key="canvasLocation" x="-334.765625" y="-79.1015625"/>
+        </toolbar>
+    </objects>
+</document>

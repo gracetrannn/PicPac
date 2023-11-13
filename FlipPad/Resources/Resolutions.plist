@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>640 x 480</string>
+	<string>720 x 480</string>
+	<string>800 x 600</string>
+	<string>1280 x 720</string>
+	<string>1920 x 1080</string>
+</array>
+</plist>

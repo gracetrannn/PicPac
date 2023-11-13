@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3" customClass="FBResolutionCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="640 x 480" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                        <rect key="frame" x="7" y="74" width="107" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="3L5-7B-cYR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                        <rect key="frame" x="7" y="5" width="107" height="68"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.92338617700000003" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4" secondAttribute="bottom" constant="5" id="6VZ-WX-fmg"/>
+                <constraint firstAttribute="trailing" secondItem="9" secondAttribute="trailing" constant="6" id="ATx-HV-saD"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" constant="6" id="DST-MG-fiT"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="1" id="Pse-Yi-GoR"/>
+                <constraint firstItem="9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="5" id="TGn-jR-JkW"/>
+                <constraint firstItem="9" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="7" id="oCd-tv-nuG"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="7" id="z9j-lf-c4U"/>
+            </constraints>
+            <size key="customSize" width="100" height="109"/>
+            <connections>
+                <outlet property="resolutionTitle" destination="4" id="30"/>
+                <outlet property="thumbnailImageView" destination="9" id="31"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

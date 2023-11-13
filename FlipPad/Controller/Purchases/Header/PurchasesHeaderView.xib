@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PurchasesHeaderView" customModule="FlipBook" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3" customClass="PurchasesHeaderView" customModule="FlipPad">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="255"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZnU-iY-G9E" userLabel="FeaturesStack">
+                    <rect key="frame" x="0.0" y="0.0" width="500" height="255"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Upgrade to more features with FlipPad Pro:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="116">
+                            <rect key="frame" x="16" y="16" width="468" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Lwl-1G-5hb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Xx-bY-f6S" userLabel="FeaturesWrapper">
+                            <rect key="frame" x="16" y="52" width="468" height="187"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-1Q-bub" userLabel="spacer">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="187"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="f5x-Xy-mvK" userLabel="FeaturesStack">
+                                    <rect key="frame" x="120" y="0.0" width="348" height="187"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="• Custom colors and palettes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="117">
+                                            <rect key="frame" x="0.0" y="0.0" width="348" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="• Up to 1000 frames in each scene" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="120" userLabel="• Up to 1000 frames in each scene">
+                                            <rect key="frame" x="0.0" y="51" width="348" height="34.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="• High definition" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="121">
+                                            <rect key="frame" x="0.0" y="101.5" width="348" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="• Up to 10 levels in the xsheet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="118" userLabel="• Up to 10 levels in the xsheet">
+                                            <rect key="frame" x="0.0" y="152.5" width="348" height="34.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEt-T2-3wv" userLabel="spacer">
+                                            <rect key="frame" x="0.0" y="187" width="348" height="0.0"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Ycx-1Q-bub" firstAttribute="width" secondItem="7Xx-bY-f6S" secondAttribute="width" multiplier="0.25641" id="x6a-G9-1Pr"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.92693537473678589" green="0.92693537473678589" blue="0.92693537473678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="PurchasesHeaderView"/>
+            <constraints>
+                <constraint firstItem="ZnU-iY-G9E" firstAttribute="top" secondItem="3" secondAttribute="top" id="9ri-ep-Kss"/>
+                <constraint firstAttribute="bottom" secondItem="ZnU-iY-G9E" secondAttribute="bottom" id="AX0-0s-4sD"/>
+                <constraint firstItem="ZnU-iY-G9E" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="ESS-Tw-yXW"/>
+                <constraint firstAttribute="trailing" secondItem="ZnU-iY-G9E" secondAttribute="trailing" id="R2y-PE-bSs"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="279.76011994002999" y="76"/>
+        </view>
+    </objects>
+</document>
